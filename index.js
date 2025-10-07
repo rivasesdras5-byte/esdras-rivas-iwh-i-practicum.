@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // * Please DO NOT INCLUDE the private app access token in your repo. Don't do this practicum in your normal account.
-const PRIVATE_APP_ACCESS = 'pat-na1-837a4b84-801f-43ad-a13d-dbfe8b326e46';
+const PRIVATE_APP_ACCESS = 'YOUR_PRIVATE_APP_ACCESS_TOKEN';
 
 app.get('/', async (req, res) => {
     const object = 'https://api.hubapi.com/crm/v3/objects/p_redes_sociales?properties=nombre_red,anio_creacion,ceo';
